@@ -8,7 +8,7 @@
     <!--  compiled and minified CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/custom.css">
-  <title>Adicionar Contato</title>
+  <title>Add New Records</title>
 </head>
 
 <body>
@@ -197,12 +197,12 @@
         //Inserting data's
         if($validator)
         {
-            $pdo = Banco::conectar();
+            $pdo = Config::connector();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO app (name, address, phone, email, gander) VALUES(?,?,?,?,?)";
             $q = $pdo->prepare($sql);
             $q->execute(array($name,$address,$phone,$email,$gander));
-
+          //sweetAlert 
            echo '<script>
             swal({
                     title: "Wow!",
@@ -213,7 +213,7 @@
                                     });
             </script>';
             
-            Banco::desconectar();
+            Config::disconnect();
           
 
          
