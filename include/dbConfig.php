@@ -1,6 +1,6 @@
 <?php
 
-class Banco
+class Config
 {
    
     private static $dbHost = 'localhost';

@@ -63,8 +63,8 @@
                         </thead>
                         <tbody class="tbody">
                             <?php
-                            include 'banco.php';
-                            $pdo = Banco::conectar();
+                            include 'include/dbConfig.php';
+                            $pdo = Config::connector();
                             $sql = 'SELECT * FROM app ORDER BY id DESC';
                             foreach($pdo->query($sql)as $row)
                             {
@@ -92,7 +92,7 @@
                                 
                             echo '</tr>';
                             }
-                            Banco::desconectar();
+                            Config::disconnect();
                             ?>
                         </tbody>
                     </table>
