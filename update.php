@@ -1,6 +1,5 @@
 <?php
 	require 'include/dbConfig.php';
-
 	$id = null;
 	if ( !empty($_GET['id']))
             {
