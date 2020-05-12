@@ -113,8 +113,7 @@
             event.preventDefault(); // prevent form submit
             var form = event.target.form; // storing the form
             swal({
-            
-          
+
             title: "Are you sure You  ?",
             text: "Record Can't Be Restored, Once Deleted!!.",
             type: "warning",
