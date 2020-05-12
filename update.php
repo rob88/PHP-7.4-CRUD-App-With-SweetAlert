@@ -1,5 +1,4 @@
 <?php
-
 	require 'include/dbConfig.php';
 
 	$id = null;

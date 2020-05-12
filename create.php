@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/custom.css">
   <title>Add New Records</title>
 </head>
-
 <body>
     <div class="container">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
