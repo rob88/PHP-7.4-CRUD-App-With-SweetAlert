@@ -1,7 +1,6 @@
 <table class="table table-bordered tb">
     <thead class="th">
         <tr>
-            
             <th scope="col">Name</th>
             <th scope="col">Address</th>
             <th scope="col">phone</th>
