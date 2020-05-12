@@ -11,13 +11,13 @@ header("Location: index.php");
 }
 else
 {
-$pdo = Banco::connector();
+$pdo = Config::connector();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql = "SELECT * FROM app where id = $id";
 $q = $pdo->prepare($sql);
 $q->execute(array($id));
 $data = $q->fetch(PDO::FETCH_ASSOC);
-Banco::disconnect();
+Config::disconnect();
 }
 ?>
 <!DOCTYPE html>
