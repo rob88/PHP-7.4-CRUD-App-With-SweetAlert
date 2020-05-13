@@ -19,7 +19,7 @@ if(!empty($_POST))
     $q = $pdo->prepare($sql);
     $q->execute(array($id));
     Config::disconnect();
-    //header("Location: index.php");
+    header("Location: index.php");
 }
 ?>
 
